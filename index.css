@@ -1,0 +1,317 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 150px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  width: 100%;
+}
+
+#Home,#News,#Contact,#About{background-color:#464646;}
+
+#About{background-color:#464646;}
+
+.margin{
+    margin-top:20px;
+    width: 100%;
+    height: auto;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+#myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.box{
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+.text1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2%;
+}
+
+.text2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:-20px;
+}
+
+.text3{
+    font-size: 60px;
+}
+
+.text4{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: -80px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.textbox1{
+    width: 75%;
+    height: auto;
+}
+
+
+/* skill bar*/
+.b{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.body{
+  height: 100vh;
+  align-items: center;   
+}
+
+.container{
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+.container .skill-box{
+  width: 100%;
+  margin: 25px 0;
+}
+.skill-box .title{
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+.skill-box .skill-bar{
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: white;
+}
+.skill-bar .skill-per{
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: #4070f4;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+.skill-per.css{
+  width: 80%;
+  animation-delay: 0.1s;
+}
+.skill-per.javascript{
+  width: 50%;
+  animation-delay: 0.2s;
+}
+.skill-per.c{
+  width: 80%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.php{
+  width: 85%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.c0{
+  width: 70%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.python{
+  width: 90%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.UI{
+  width: 60%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.Network{
+  width: 75%;
+  animation-delay: 0.3s;
+}
+@keyframes progress {
+  0%{
+      width: 0;
+      opacity: 1;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+.skill-per .tooltip{
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #4070f4;
+  z-index: 1;
+}
+.tooltip::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: #4070f4;
+  transform: translateX(-50%) rotate(45deg);
+
+}
+
+
+/*box*/
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap");
+
+.b1{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body1 {
+  width: auto;
+  max-width: 700px;
+  min-height: 50px;
+  font-family: "Exo", Arial, sans-serif;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  gap: 30px;
+  padding: 0px;
+  counter-reset: item;
+  margin: 5%;
+}
+
+.box1 {
+  background-color: #fff;
+  border-radius: 6px;
+  min-height: 160px;
+  --shadow: 1px 1px 1px 1px rgb(0 0 0 / 0.25);
+  box-shadow: var(--shadow);
+  counter-increment: item;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1::before {
+  content: counter(item);
+  display: block;
+  color: transparent;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2rem + 2vw, 3rem);
+}
+
+/* Buttons*/
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+a:link{text-decoration: none;}
+
+
+/* social media*/
